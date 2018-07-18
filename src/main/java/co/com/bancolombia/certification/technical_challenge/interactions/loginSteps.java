@@ -1,35 +1,35 @@
 package co.com.bancolombia.certification.technical_challenge.interactions;
 
-import co.com.bancolombia.certification.technical_challenge.user_interface.TheNinjaStoreHomePage;
+import co.com.bancolombia.certification.technical_challenge.user_interface.TheNinjaStoreLoginPage;
 import net.thucydides.core.annotations.Step;
 
 public class loginSteps {
 
-	TheNinjaStoreHomePage theNinjaStoreHomePage;
+	TheNinjaStoreLoginPage theNinjaStoreLoginPage;
 
 	@Step
 	public void OpenPage() {
-		theNinjaStoreHomePage.open();
+		theNinjaStoreLoginPage.open();
 	}
 
 	@Step
 	public void InputEmailStep(String users) {
-		theNinjaStoreHomePage.InputEmail(users);
+		theNinjaStoreLoginPage.InputEmail(users);
 	}
 
 	@Step
 	public void InputPasswordStep(String password) {
-		theNinjaStoreHomePage.InputPassword(password);
+		theNinjaStoreLoginPage.InputPassword(password);
 	}
 
 	@Step
 	public void Login() {
-		theNinjaStoreHomePage.Login();
+		theNinjaStoreLoginPage.Login();
 	}
 	
 	@Step
 	public void MyAccount() {
-		theNinjaStoreHomePage.MyAccount();
+		theNinjaStoreLoginPage.MyAccount();
 	}
 
 }

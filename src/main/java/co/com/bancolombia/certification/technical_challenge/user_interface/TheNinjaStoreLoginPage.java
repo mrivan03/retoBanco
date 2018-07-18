@@ -7,7 +7,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("http://tutorialsninja.com/demo/index.php?route=account/login")
-public class TheNinjaStoreHomePage extends PageObject {
+public class TheNinjaStoreLoginPage extends PageObject {
 
 	@FindBy(id = "input-email")
 	private WebElement TextBoxInputEmail;
