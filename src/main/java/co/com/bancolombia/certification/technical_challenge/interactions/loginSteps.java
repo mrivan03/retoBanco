@@ -26,10 +26,15 @@ public class loginSteps {
 	public void Login() {
 		theNinjaStoreLoginPage.Login();
 	}
-	
+
 	@Step
 	public void MyAccount() {
 		theNinjaStoreLoginPage.MyAccount();
+	}
+
+	@Step
+	public void FailedLoging() {
+		theNinjaStoreLoginPage.FailedLoging();
 	}
 
 }

@@ -21,6 +21,9 @@ public class TheNinjaStoreLoginPage extends PageObject {
 	@FindBy(xpath = "//*[@id=\"column-right\"]/div/a[1]")
 	private WebElement MyAccountButton;
 
+	@FindBy(xpath = "//*[@id=\"account-login\"]/div[1]")
+	private WebElement FailedLogingText;
+
 	public void InputEmail(String Email) {
 		TextBoxInputEmail.sendKeys(Email);
 	}
@@ -35,6 +38,10 @@ public class TheNinjaStoreLoginPage extends PageObject {
 
 	public void MyAccount() {
 		MyAccountButton.click();
+	}
+
+	public void FailedLoging() {
+		FailedLogingText.getText();
 	}
 
 }
